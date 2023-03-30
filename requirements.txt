@@ -1,0 +1,17 @@
+asgiref==3.6.0
+beautifulsoup4==4.12.0
+certifi==2020.4.5.1
+chardet==3.0.4
+charset-normalizer==2.1.1
+click==8.1.3
+Django==4.1.7
+idna==2.9
+lxml==4.9.1
+requests==2.23.0
+six==1.16.0
+soupsieve==2.4
+spark-parser==1.8.9
+sqlparse==0.4.3
+uncompyle6==3.8.0
+urllib3==1.25.9
+xdis==6.0.4

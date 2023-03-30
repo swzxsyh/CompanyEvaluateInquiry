@@ -1,0 +1,39 @@
+{
+  "_comment": {
+    "comment": "这是注释，自动忽略该名称定义 由代码写死 不可变",
+    "company_name": "公司名称 自定义",
+    "api_url": "调用URL",
+    "token": "自己的Token，若网站不需Token则可不填",
+    "mapping": "调用模式，Post还是Get",
+    "type": "调用Agent类型，应该有4种，包含允许自定义类型"
+  },
+  "lagou": {
+    "company_name": "拉勾",
+    "api_url": "test",
+    "token": "test",
+    "mapping": "Post",
+    "type": "test"
+  },
+  "liepin": {
+    "company_name": "猎聘",
+    "api_url": "test",
+    "token": "test",
+    "mapping": "Post",
+    "type": "test"
+  },
+  "zhilian": {
+    "company_name": "智联招聘",
+    "api_url": "test",
+    "token": "test",
+    "mapping": "Post",
+    "type": "test"
+  },
+  "kanzhun": {
+    "company_name": "看准",
+    "api_url": "test",
+    "token": "test",
+    "mapping": "Post",
+    "type": "test"
+  }
+}
+
