@@ -1,0 +1,2 @@
+# CompanyEvaluateInquiry
+这是一个集成多个招聘软件对公司评价的小功能
