@@ -1,39 +1,66 @@
 {
   "_comment": {
-    "comment": "这是注释，自动忽略该名称定义 由代码写死 不可变",
-    "company_name": "公司名称 自定义",
-    "api_url": "调用URL",
-    "token": "自己的Token，若网站不需Token则可不填",
-    "mapping": "调用模式，Post还是Get",
-    "type": "调用Agent类型，应该有4种，包含允许自定义类型"
+    "description": "招聘/评价站点配置。api_url 为空或为 test 时，会展示人工检索入口和本地风险判断；配置真实接口后会按 method、headers、params、body 调用。",
+    "placeholders": "headers、params、body 中的 {company} 会在查询时替换为搜索框中的公司名。token 非空时默认加入 Authorization: Bearer <token>。"
   },
   "lagou": {
-    "company_name": "拉勾",
-    "api_url": "test",
-    "token": "test",
-    "mapping": "Post",
-    "type": "test"
+    "company_name": "拉勾招聘",
+    "api_url": "",
+    "token": "",
+    "method": "GET",
+    "type": "web",
+    "headers": {},
+    "params": {
+      "keyword": "{company}"
+    },
+    "search_url": "https://www.lagou.com/jobs/list_{company}"
   },
   "liepin": {
     "company_name": "猎聘",
-    "api_url": "test",
-    "token": "test",
-    "mapping": "Post",
-    "type": "test"
+    "api_url": "",
+    "token": "",
+    "method": "GET",
+    "type": "web",
+    "headers": {},
+    "params": {
+      "key": "{company}"
+    },
+    "search_url": "https://www.liepin.com/zhaopin/?key={company}"
   },
   "zhilian": {
     "company_name": "智联招聘",
-    "api_url": "test",
-    "token": "test",
-    "mapping": "Post",
-    "type": "test"
+    "api_url": "",
+    "token": "",
+    "method": "GET",
+    "type": "web",
+    "headers": {},
+    "params": {
+      "kw": "{company}"
+    },
+    "search_url": "https://sou.zhaopin.com/?kw={company}"
   },
   "kanzhun": {
     "company_name": "看准",
-    "api_url": "test",
-    "token": "test",
-    "mapping": "Post",
-    "type": "test"
+    "api_url": "",
+    "token": "",
+    "method": "GET",
+    "type": "web",
+    "headers": {},
+    "params": {
+      "query": "{company}"
+    },
+    "search_url": "https://www.kanzhun.com/search/?q={company}"
+  },
+  "zhihu": {
+    "company_name": "知乎",
+    "api_url": "",
+    "token": "",
+    "method": "GET",
+    "type": "web",
+    "headers": {},
+    "params": {
+      "q": "{company} 外包"
+    },
+    "search_url": "https://www.zhihu.com/search?type=content&q={company}%20外包"
   }
 }
-
